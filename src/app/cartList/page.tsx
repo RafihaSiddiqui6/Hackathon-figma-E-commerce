@@ -18,7 +18,7 @@ export default function CartList() {
           {/* Product 1 */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between sm:justify-around bg-white rounded-lg shadow-md p-4 mb-6">
             <Image
-              src="/Images/Product one.png"
+              src="/images/Product one.png"
               alt="Product 1"
               width={1500}
               height={1500}
@@ -36,7 +36,7 @@ export default function CartList() {
           {/* Product 2 */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between sm:justify-around bg-white rounded-lg shadow-md p-4 mb-6">
             <Image
-              src="/Images/Product two.png"
+              src="/images/Product Two.png"
               alt="Product 2"
               width={1500}
               height={1500}
