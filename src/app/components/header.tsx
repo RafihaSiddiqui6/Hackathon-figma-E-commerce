@@ -31,8 +31,10 @@ export default function Header(){
           <a href="./cartList">
             <IoCartOutline size={25} className="text-[#2A254B]" />
           </a>
+           <a href="./">
           <IoIosContact size={25} className="text-[#2A254B]" />
-        </div>
+          </a>
+         </div>
 
         {/* Hamburger Menu for Mobile */}
         <div className="flex items-center gap-4 md:hidden">
