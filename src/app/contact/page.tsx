@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
     <div className="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <h2 className="text-4xl font-bold text-[#2A254B] text-center mb-4">Contact Us</h2>
       <p className="text-center font-bold text-[#2A254B] hover:text-gray-600 mb-6 ">
-        If you have any queries about our Case Mate, feel free to reach out!
+        If you have any queries about our Product, feel free to reach out!
       </p>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="form-group">
