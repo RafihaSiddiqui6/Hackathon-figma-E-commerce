@@ -8,12 +8,13 @@ export default function Page(){
   return (
     <div>
    <Brand/>
-   <Club/>
    <Uniqueness/>
    <Ceramics/>
    <Products/>
+   <Club/>
    <Last/>
     </div>
   )
 }
+
 
