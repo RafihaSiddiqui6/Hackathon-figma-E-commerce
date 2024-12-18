@@ -1,11 +1,9 @@
 import Image from 'next/image';
-
-
 export default function CartList() {
   return (
     <div>
         <div className="h-auto w-full  p-8">
-          <h1 className="text-black text-4xl font-medium pb-8 pl-12 text-center sm:text-left">
+          <h1 className="text-black text-4xl font-medium pb-8 sm:pl-5 md:pl-40 text-center sm:text-left">
             Your Shopping Cart
           </h1>
 
@@ -54,12 +52,12 @@ export default function CartList() {
           {/* Subtotal */}
           <div className="flex justify-between sm:justify-end mt-8 pr-28 ">
             <p className="text-gray-600 text-lg">Subtotal</p>
-            <p className="font-semibold text-lg">£210</p>
+            <p className="font-semibold text-lg pl-5">£210</p>
           </div>
 
           {/*Button */}
           <div className="flex justify-end mt-6">
-            <button className="bg-[#4E4D93] text-white py-2  px-6 mr-20  transition">
+            <button className="bg-[#2d2c64] text-white py-2  px-6 mr-20  transition">
               Go to Checkout
             </button>
           </div>
