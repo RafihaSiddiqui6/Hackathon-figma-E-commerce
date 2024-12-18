@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Ceramics(){
   return (
-    <>
+    <div>
       <section>
         <div className="px-4 md:px-8 py-12 text-[#2A254B] mt-12">
            <h1 className="text-2xl font-semibold">New Ceramics</h1>
@@ -17,7 +17,7 @@ export default function Ceramics(){
                 height={700}
                 width={700}
                 alt="chair"
-                className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+                className="w-full h-[80%]"
               />
               <div className="mt-4 text-[#2A254B]">
                 <p className="py-2">The Dendy Chair</p>
@@ -32,7 +32,7 @@ export default function Ceramics(){
                 height={700}
                 width={700}
                 alt="vase"
-                className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+                className="w-full h-[80%]"
               />
               <div className="mt-4 text-[#2A254B]">
                 <p className="py-2">Rustic VaseSet</p>
@@ -47,7 +47,7 @@ export default function Ceramics(){
                 height={700}
                 width={700}
                 alt="silky vase"
-                className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+                className="w-full h-[80%]"
               />
               <div className="mt-4 text-[#2A254B]">
                 <p className="py-2">The Silky Vase</p>
@@ -62,7 +62,7 @@ export default function Ceramics(){
                 height={700}
                 width={700}
                 alt="lamp"
-                className="w-full h-[80%] object-cover transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+                className="w-full h-[80%]"
               />
               <div className="mt-4 text-[#2A254B]">
                 <p className="py-2">The Lucky Lamp</p>
@@ -72,13 +72,13 @@ export default function Ceramics(){
           </div>
 
           {/* View Collection Button */}
-          <div className="my-10 flex justify-center items-center">
+          <div className="mb-0 mt-4  flex justify-center items-center">
             <a  href="/productlist" className="bg-[#F9F9F9] py-4 px-6 rounded-[5px] font-semibold text-[#2A254B] hover:bg-[#6e65a8]">
               View collection
             </a>
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
