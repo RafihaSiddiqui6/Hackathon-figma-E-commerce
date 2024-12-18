@@ -1,50 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
-import { TbTruckDelivery } from 'react-icons/tb';
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { LuSprout } from "react-icons/lu";
-import { MdOutlinePriceChange } from "react-icons/md";
+import Uniqueness from '../components/uniqueness';
+import Club from '../components/club';
 
 export default function ProductList(){
-  const features = [
-    {
-      title: 'Next day as standard',
-      description: 'Order before 3pm and get your order the next day as standard.',
-      icon: TbTruckDelivery,
-    },
-    {
-      title: 'Made by true artisans',
-      description: 'Hand-crafted goods made with real passion and craftsmanship.',
-      icon: IoIosCheckmarkCircleOutline,
-    },
-    {
-      title: 'Unbeatable prices',
-      description: 'For our material and quality, you won’t find better prices anywhere.',
-      icon: MdOutlinePriceChange,
-    },
-    {
-      title: 'Recycled packaging',
-      description: 'We use 100% recycled packaging to ensure our footprint is manageable.',
-      icon: LuSprout,
-    },
-  ];
-
-  return (
-    <>
+ return (
+    <div>
       <section>
-        <div className="px-4 md:px-8 lg:px-12 py-8 md:py-12">
+        <div className=" py-8 md:py-12">
           {/* Main Product Section */}
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-1/2 h-auto">
+            <div className="w-full md:w-[721px] md:h-[759px]">
               <Image
                 src={'/images/Image Left.png'}
-                height={800}
-                width={800}
+                height={1000}
+                width={1000}
                 alt="chair"
-                className="w-full h-auto object-cover"
+                className="w-[721px] h-[759px] object-cover"
               />
             </div>
-            <div className="w-full md:w-1/2 px-4 md:px-10 py-6 flex flex-col justify-center">
+            <div className="w-full md:w-[602px] px-4 md:px-10 py-6 flex flex-col justify-center">
               <div>
                 <p className="text-xl md:text-2xl font-semibold text-[#2A254B]">The Dandy Chair</p>
                 <p className="py-2 text-lg md:text-xl text-[#2A254B]">$250</p>
@@ -100,48 +75,89 @@ export default function ProductList(){
           </div>
 
           {/* Suggestions Section */}
-          <h1 className="text-xl md:text-2xl font-semibold mt-12 text-[#505977]">You might also like</h1>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
-            {['chair', 'vase', 'silky', 'lamp'].map((item, idx) => (
-              <div key={idx} className="w-full">
-                <Image
-                  src={`/images/${item}.png`}
-                  height={700}
-                  width={700}
-                  alt={item}
-                  className="w-full h-auto object-cover transition-transform duration-300 ease-in-out hover:scale-105"
-                />
-                <div className="mt-4 text-[#2A254B]">
-                  <p className="py-2">{item === 'chair' ? 'The Dendy Chair' : `The ${item}`}</p>
-                  <p>${item === 'chair' ? 250 : item === 'vase' ? 155 : 125}</p>
-                </div>
+          <h1 className="text-xl md:text-2xl font-semibold mt-12 ml-7 text-[#505977]">You might also like</h1>
+          <div>
+      <section>
+        <div className="px-4 md:px-8  text-[#2A254B] mt-12">
+          
+          {/* Products*/}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+            {/* Product 1 */}
+            <div className="w-full h-auto">
+              <Image
+                src={'/images/chair.png'}
+                height={700}
+                width={700}
+                alt="chair"
+                className="w-full h-[80%]"
+              />
+              <div className="mt-4 text-[#2A254B]">
+                <p className="py-2">The Dendy Chair</p>
+                <p>$250</p>
               </div>
-            ))}
+            </div>
+
+            {/* Product 2 */}
+            <div className="w-full h-auto">
+              <Image
+                src={'/images/vase.png'}
+                height={700}
+                width={700}
+                alt="vase"
+                className="w-full h-[80%] "
+              />
+              <div className="mt-4 text-[#2A254B]">
+                <p className="py-2">Rustic VaseSet</p>
+                <p>$155</p>
+              </div>
+            </div>
+
+            {/* Product 3 */}
+            <div className="w-full h-auto">
+              <Image
+                src={'/images/silky.png'}
+                height={700}
+                width={700}
+                alt="silky vase"
+                className="w-full h-[80%]"
+              />
+              <div className="mt-4 text-[#2A254B]">
+                <p className="py-2">The Silky Vase</p>
+                <p>$125</p>
+              </div>
+            </div>
+
+            {/* Product 4 */}
+            <div className="w-full h-auto">
+              <Image
+                src={'/images/lamp.png'}
+                height={700}
+                width={700}
+                alt="lamp"
+                className="w-full h-[80%] "
+              />
+              <div className="mt-4 text-[#2A254B]">
+                <p className="py-2">The Lucky Lamp</p>
+                <p>$399</p>
+              </div>
+            </div>
           </div>
 
           {/* View Collection Button */}
-          <div className="my-10 flex justify-center">
-            <button className="bg-[#F9F9F9] hover:bg-[#6e65a8] py-3 px-6 rounded-md text-[#2A254B]">
+          <div className="mb-0 mt-4  flex justify-center items-center">
+            <a  href="/productlist" className="bg-[#F9F9F9] py-4 px-6 rounded-[5px] font-semibold text-[#2A254B] hover:bg-[#6e65a8]">
               View collection
-            </button>
-          </div>
-
-          {/* Features Section */}
-          <div className="flex flex-col md:flex-row gap-6 mt-12 text-sm md:text-base">
-            {features.map((feature, idx) => {
-              const Icon = feature.icon;
-              return (
-                <div key={idx} className="flex flex-col md:w-1/4 p-4 rounded-lg">
-                  <Icon size={30} className="text-[#2A254B]" />
-                  <p className="py-4 font-semibold">{feature.title}</p>
-                  <p>{feature.description}</p>
-                </div>
-              );
-            })}
+            </a>
           </div>
         </div>
       </section>
-    </>
-  );
+    </div>
+          {/* Uniqueness and club Section */}
+          <Uniqueness/>
+          <Club/>
+         </div>
+      </section>
+    </div>
+);
 };
 
