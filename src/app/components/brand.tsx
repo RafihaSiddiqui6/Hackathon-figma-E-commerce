@@ -33,7 +33,7 @@ export default function Brand(){
                width={700} 
                height={700} 
                alt='right'
-               className='h-[584px] md:w-[100%] '
+               className='md:h-[584px] md:w-[100%] '
                />
             </div>
           </div>
