@@ -31,10 +31,10 @@ export default function Header(){
           <a href="./cartList">
             <IoCartOutline size={25} className="text-[#2A254B]" />
           </a>
-           <a href="./">
+          <a href="./">
           <IoIosContact size={25} className="text-[#2A254B]" />
           </a>
-         </div>
+        </div>
 
         {/* Hamburger Menu for Mobile */}
         <div className="flex items-center gap-4 md:hidden">
@@ -61,20 +61,20 @@ export default function Header(){
               className="text-2xl focus:outline-none"
               onClick={toggleMenu}
             >
-              <IoClose />
+              
             </button>
           </div>
         )}
-
         <ul className="flex flex-col md:flex-row justify-center items-start md:items-center gap-4 md:gap-8 text-[#726E8D] text-base p-6 md:p-0">
-          {['Plant pots', 'Ceramics', 'Tables', 'Chairs', 'Crockery', 'Tableware', 'Cutlery'].map((item) => (
-            <li key={item}>
-              <a href="/about">{item}</a>
-            </li>
-          ))}
-          
+          <li><a href="/">Home</a></li>
+          <li><a href="/home2">Home 2</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/productlist">Productlist</a></li>
+          <li><a href="/productlisting">Productlisting</a></li>
+          <li><a href="/cartList">Cart</a></li>
+          <li><a href="/contact">Contact us</a></li>
         </ul>
-      </header>
+         </header>
     </div>
   
   );
