@@ -34,7 +34,7 @@ export default function Last(){
                 height={1500}
                 width={1500}
                 alt="chair"
-                className="w-[720px] h-[603px] "
+                className="w-[720px] md:h-[603px] "
               />
             </div> 
         </div>
